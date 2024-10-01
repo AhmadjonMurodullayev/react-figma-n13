@@ -1,0 +1,119 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #DDDDDD;
+}
+
+.header_sorch {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid #DDDDDD;
+}
+
+.title {
+    color: black;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.div {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    gap: 10px;
+    border-right: 1px solid #DDDDDD;
+}
+
+.dumaloq {
+    width: 30px;
+    height: 30px;
+    background-color: #FF385C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_sing {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons {
+    width: 80px;
+    height: 40px;
+    border: 2px solid #DDDDDD;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .header_sorch {
+        width: 100%;
+        margin-bottom: 10px; 
+        gap: 10px;
+    }
+
+    .icons {
+        width: 60px;
+        height: 30px;
+        gap: 5px; 
+    }
+
+    .title {
+        font-size: 18px; 
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .header {
+        height: 60px; 
+    }
+
+    .header_sorch {
+        height: 40px;
+        gap: 15px;
+    }
+
+    .icons {
+        width: 70px;
+        height: 35px;
+    }
+}
+
+@media (min-width: 901px) {
+    .header {
+        height: 70px; 
+    }
+
+    .header_sorch {
+        height: 50px;
+        gap: 20px;
+    }
+
+    .icons {
+        width: 80px;
+        height: 40px;
+    }
+}
